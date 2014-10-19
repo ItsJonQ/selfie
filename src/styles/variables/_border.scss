@@ -1,0 +1,9 @@
+// Variables :: Borders
+
+// Borders
+// base   :     4px
+// sm     :     2px
+// lg     :     24px
+$border-radius-base: 2px;
+$border-radius-sm: $border-radius-base;
+$border-radius-lg: ceil($border-radius-base * 6);

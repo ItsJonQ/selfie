@@ -1,0 +1,59 @@
+// Variables :: Typography
+
+// Font-Family: Sans-Serif
+$font-family-sans-serif: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+// Font Family: Code
+$font-family-mono: "Monaco", "Liberation Mono", "Courier", "Monospace";
+// Font Family: Base
+$font-family-base: $font-family-sans-serif;
+
+
+// Font Base
+$font-size-base: 14px;
+
+
+// Type Scale
+// Based on "Golden Ratio" Typography Scale
+// Source: http://modularscale.com/scale/?px1=15&px2=1&ra1=1.618&ra2=0
+// h1     :       40px
+// h2     :       30px
+// h3     :       24px
+// h4     :       18px
+// h5     :       15px
+// h6     :       12px
+$font-size-h1:    ceil( 2.618 * $font-size-base );
+$font-size-h2:    ceil( 1.936 * $font-size-base );
+$font-size-h3:    ceil( 1.618 * $font-size-base );
+$font-size-h4:    ceil( 1.196 * $font-size-base );
+$font-size-h5:    $font-size-base;
+$font-size-h6:    ceil( 0.739 * $font-size-base );
+
+$font-size-small: ceil( 0.866 * $font-size-base );
+$font-size-tiny:  ceil( 0.724 * $font-size-base );
+
+
+// Font Line Height (Spacing)
+// base:    :
+// computed :     20px
+$line-height-base: 1.6 !default;
+$line-height-computed: ceil( $font-size-base * $line-height-base ) !default;
+$line-height-em: 1.6em;
+
+
+// Icon (Font)
+$font-icon-sm:        12px;
+$font-icon:           16px;
+$font-icon-large:     20px;
+$font-icon-x-large:   28px;
+
+
+// Font Weights
+$font-weight-light: lighter;
+$font-weight-base: normal;
+$font-weight-bold: bold;
+
+$font-weight-normal: $font-weight-base;
+
+
+// Font Transforms
+$text-uppercase:    uppercase;

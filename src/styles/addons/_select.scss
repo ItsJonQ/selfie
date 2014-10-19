@@ -1,0 +1,13 @@
+// Addons :: Select
+
+@mixin enable-select() {
+  @include prefixer( user-select, inherit, webkit moz ms spec );
+}
+
+@mixin disable-select() {
+  @include prefixer( user-select, none, webkit moz ms spec );
+}
+
+@mixin clickable() {
+  cursor: pointer;
+}

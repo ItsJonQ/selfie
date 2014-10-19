@@ -1,0 +1,18 @@
+// Components :: Scaffolding
+
+* {
+  @include box-sizing( border-box );
+}
+
+body {
+  @include font-smoothing;
+  background-color: $white;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $gray-dark;
+  font-weight: $font-weight-base;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}

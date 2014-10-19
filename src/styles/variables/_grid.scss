@@ -1,0 +1,13 @@
+// Variables :: Grid
+
+// Gutter
+// The gutter is used as to provide spacing between elements, and is based
+// on $keyline.
+//
+// gutter:    24px
+// half:      12px
+// double:    48px
+
+$gutter:            ceil( $keyline * 3 );
+$gutter-half:       ceil( $gutter / 2 );
+$gutter-double:     ceil( $gutter * 2 );

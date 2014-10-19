@@ -1,0 +1,15 @@
+// Variables :: Keyline
+
+// Keyline
+// The keyline base number is the foundation for entire grid system and spacing
+// used by the app.
+//
+// base:      4px
+// default:   8px
+// double:    16px
+
+$keyline-base:      4px;
+$keyline:           ceil( $keyline-base * 2 );
+$keyline-half:      $keyline-base;
+$keyline-double:    ceil( $keyline * 2 );
+$keyline-base-half: ceil( $keyline-base / 2 );
