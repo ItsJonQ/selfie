@@ -8,10 +8,10 @@ module.exports = function(grunt) { 'use strict';
 
   // Configurable paths
   var config = {
-    dist: 'dist',
+    dist: 'public',
     src: 'src',
     liveReload: 35729,
-    port: 9000,
+    port: 1212,
     url: 'localhost'
   };
 
@@ -243,8 +243,7 @@ module.exports = function(grunt) { 'use strict';
 
   grunt.registerTask('start', [
     'sass',
-    'copy:images',
-    'watch'
+    'server'
   ]);
 
   grunt.registerTask('build', [
