@@ -28,20 +28,20 @@ module.exports = function(grunt) { 'use strict';
         files: ['<%= config.src %>/scripts/{,*/}*.js'],
         tasks: ['jshint', 'copy:scripts'],
         options: {
-          livereload: 35729
+          livereload: '<%= config.liveReload %>'
         }
       },
       images: {
         files: ['<%= config.src %>/images/**/*'],
         tasks: ['copy:images'],
         options: {
-          livereload: 35729
+          livereload: '<%= config.liveReload %>'
         }
       },
       html: {
         files: ['*.html'],
         options: {
-          livereload: 35729
+          livereload: '<%= config.liveReload %>'
         }
       },
       gruntfile: {
@@ -51,7 +51,7 @@ module.exports = function(grunt) { 'use strict';
         files: ['<%= config.src %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['sass:server'],
         options: {
-          livereload: 35729
+          livereload: '<%= config.liveReload %>'
         }
       }
     },
@@ -61,7 +61,7 @@ module.exports = function(grunt) { 'use strict';
       options: {
         port: '<%= config.port %>',
         open: true,
-        livereload: 35729,
+        livereload: '<%= config.liveReload %>',
         // Change this to '0.0.0.0' to access the server from outside
         hostname: '<%= config.url %>'
       },
@@ -243,6 +243,7 @@ module.exports = function(grunt) { 'use strict';
 
   grunt.registerTask('start', [
     'sass',
+    'copy:images',
     'server'
   ]);
 

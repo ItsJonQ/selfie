@@ -1,0 +1,34 @@
+// Components :: Selfie
+
+.selfie {
+  @include display( flex );
+  @include align-items( center );
+  @include justify-content( center );
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: lighten( $q-blue-bg, 2 );
+  border-left: 1px solid darken( $q-blue-bg, 4 );
+
+  .avatar {
+    max-width: 360px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: $q-border;
+      margin-top: -70px;
+    }
+
+    img {
+      @include disable-select;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}

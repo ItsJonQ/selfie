@@ -6,10 +6,10 @@
 
 body {
   @include font-smoothing;
-  background-color: $white;
+  background-color: $q-blue-bg;
   font-family: $font-family-base;
   font-size: $font-size-base;
-  color: $gray-dark;
+  color: $white;
   font-weight: $font-weight-base;
   padding: 0;
   margin: 0;
